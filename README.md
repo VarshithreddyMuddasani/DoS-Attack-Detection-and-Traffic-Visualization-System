@@ -1,21 +1,42 @@
-Denial-of-Service (DoS) attacks are among the most common and disruptive cyber threats, 
-where an attacker overwhelms a system, server, or network with excessive traffic, making it 
-unavailable to legitimate users. With the rapid growth of network-based services, the need 
-for effective detection and monitoring of such attacks has become critical. 
+🚀 Real-Time DoS Attack Detection and Traffic Visualization System
+📌 Overview
 
-This project presents a lightweight and efficient DoS Attack Detection System developed 
-using Python. The system captures live network traffic using packet sniffing techniques and 
-analyzes the data to detect abnormal patterns such as SYN Flood and ICMP Flood attacks. By 
-applying threshold-based detection logic, the system identifies suspicious traffic behavior in 
-real time. 
+This project focuses on detecting Denial of Service (DoS) attacks such as SYN Flood and ICMP Flood by analyzing network traffic in real time. It monitors packet behavior, identifies abnormal traffic spikes, and visualizes attack patterns using graphical representations.
 
-The captured data is structured and stored using data analysis tools, enabling further 
-processing and visualization. Graphical representations of network activity are generated to 
-highlight traffic spikes, making it easier to interpret attack patterns. Additionally, a web
-based dashboard is implemented to display real-time insights, including traffic statistics, 
-attack alerts, and top sources of suspicious activity. 
+🎯 Objectives
+- Detect abnormal network traffic patterns
+- Identify SYN Flood and ICMP Flood attacks
+- Analyze packet-level data in real time
+- Visualize traffic spikes and attack trends
+  
+🛠️ Technologies Used
+- Python
+- Scapy (Packet Capture & Analysis)
+- Matplotlib (Data Visualization)
+- Pandas (Data Processing)
+- Flask (Web Dashboard - Optional)
+- Wireshark (Traffic Analysis Tool)
+- 
+⚙️ Features
+- Real-time packet sniffing
+- SYN Flood detection using TCP flags
+- ICMP Flood detection
+- Threshold-based anomaly detection
+- Traffic visualization using graphs
+- Logging of detected attacks
+- 
+🧠 How It Works
+- Network packets are captured using Scapy
+- Packets are analyzed for TCP and ICMP behavior
+- Traffic is monitored against predefined thresholds
+- Suspicious activity is flagged as a potential attack
+- Results are stored and visualized using graphs
+  
+📊 Output
+- Console alerts for detected attacks
+- Logged attack data in CSV file
+- Graphical representation of traffic spikes
 
-The project demonstrates how network security concepts can be implemented using simple 
-yet powerful tools. It provides a foundation for building more advanced intrusion detection 
-systems and highlights the importance of monitoring and analyzing network traffic to 
-ensure system availability and security.
+⚠️ Disclaimer
+
+This project is developed for educational purposes only. Do not use it on unauthorized networks.
