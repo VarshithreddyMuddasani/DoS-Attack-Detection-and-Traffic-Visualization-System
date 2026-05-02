@@ -16,7 +16,7 @@ This project focuses on detecting Denial of Service (DoS) attacks such as SYN Fl
 - Pandas (Data Processing)
 - Flask (Web Dashboard - Optional)
 - Wireshark (Traffic Analysis Tool)
-- 
+  
 ⚙️ Features
 - Real-time packet sniffing
 - SYN Flood detection using TCP flags
@@ -24,7 +24,7 @@ This project focuses on detecting Denial of Service (DoS) attacks such as SYN Fl
 - Threshold-based anomaly detection
 - Traffic visualization using graphs
 - Logging of detected attacks
-- 
+  
 🧠 How It Works
 - Network packets are captured using Scapy
 - Packets are analyzed for TCP and ICMP behavior
